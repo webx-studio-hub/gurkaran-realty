@@ -37,20 +37,20 @@ document.querySelectorAll('.field__control select').forEach((sel) =>
 // ---------- category tabs ----------
 const categories = {
   house: {
-    name: 'House',
-    desc: 'A home is more than just a place to live—it’s a space to grow, share, and create memories. We offer a selection of homes designed with detail and comfort in mind, ideal for families seeking a warm, safe place to build their future. Our convenient locations, friendly neighborhoods, and modern design make each of our homes a valuable emotional and financial investment.',
+    name: 'Kothi / House',
+    desc: 'A kothi is more than a house—it’s where generations grow together. We help you find independent houses and kothis in Amritsar’s most loved avenues and colonies, with clear titles, approved maps and the space your family needs. Every home we recommend is checked for location, documentation and long-term value.',
   },
   apartment: {
-    name: 'Apartment',
-    desc: 'Smart, low-maintenance living in the heart of the city. Our apartments combine efficient layouts, shared amenities and easy access to transport, work and leisure—perfect for young professionals and couples who want comfort without compromise.',
+    name: 'Flats & Apartments',
+    desc: 'Modern flats in gated societies with lifts, power backup, parking and 24×7 security. Ideal for young families, working professionals and NRIs who want a low-maintenance home in Amritsar, Mohali or Ludhiana—ready-to-move or under construction.',
   },
   villa: {
-    name: 'Villa',
-    desc: 'Private retreats with generous space, lush gardens and pools. Our villas are designed for those who want luxury and privacy, with premium finishes, open-plan living and outdoor areas made for relaxing and entertaining.',
+    name: 'Plots & Farmhouses',
+    desc: 'Residential plots in approved colonies and farmhouse land on the outskirts of the city. We check fard, CLU and approvals so you can build your dream home or hold land as a long-term investment with complete peace of mind.',
   },
   residential: {
-    name: 'Residential',
-    desc: 'Well-planned residential communities with security, green spaces and family facilities. Ideal for long-term living and investment, each development is chosen for its location, quality of build and growing value.',
+    name: 'Commercial',
+    desc: 'Commercial floors, showrooms, SCOs and office spaces on Amritsar’s busiest roads—Ranjit Avenue, Lawrence Road, GT Road and more. Perfect for restaurants, cafés, corporate offices and retail brands, available to buy or lease.',
   },
 };
 const tabs = document.querySelectorAll('.tab');
