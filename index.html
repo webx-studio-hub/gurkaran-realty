@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gurkaran Realty — Find Your Dream Home</title>
+  <meta name="description" content="Gurkaran Realty helps you find the home that fits you best — houses, apartments, villas and residential properties." />
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="home">
+    <img class="hero__bg" src="assets/img/hero-villa.jpg" alt="" />
+    <img class="hero__shade" src="assets/img/hero-overlay.png" alt="" />
+
+    <nav class="nav container">
+      <div class="nav__left">
+        <button class="icon-btn nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#home" class="pill pill--active">Home</a></li>
+          <li><a href="#about" class="pill">About us</a></li>
+          <li><a href="#services" class="pill">Services</a></li>
+          <li><a href="#properties" class="pill">Properties</a></li>
+          <li class="nav__links-social">
+            <a href="https://wa.me/" class="icon-btn" aria-label="WhatsApp"><img src="assets/icons/whatsapp-white.svg" alt="" width="20" height="20" /></a>
+            <a href="#" class="icon-btn" aria-label="Instagram"><img src="assets/icons/instagram-white.svg" alt="" width="20" height="20" /></a>
+            <a href="#" class="icon-btn" aria-label="Facebook"><img src="assets/icons/facebook-white.svg" alt="" width="20" height="20" /></a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="#home" class="nav__logo"><img src="assets/img/logo.png" alt="Gurkaran Realty" /></a>
+
+      <div class="nav__actions">
+        <a href="https://wa.me/" class="icon-btn" aria-label="WhatsApp"><img src="assets/icons/whatsapp-white.svg" alt="" width="20" height="20" /></a>
+        <a href="#" class="icon-btn nav__social" aria-label="Instagram"><img src="assets/icons/instagram-white.svg" alt="" width="20" height="20" /></a>
+        <a href="#" class="icon-btn nav__social" aria-label="Facebook"><img src="assets/icons/facebook-white.svg" alt="" width="20" height="20" /></a>
+      </div>
+    </nav>
+
+    <div class="hero__content container">
+      <div class="hero__row">
+        <div class="hero__text">
+          <p class="eyebrow eyebrow--hero"><img src="assets/icons/dot-white.svg" alt="" width="6" height="6" />Find Your Dream Home</p>
+          <h1 class="hero__title">Unlock the Home That Fits You Best</h1>
+        </div>
+        <div class="hero__customers">
+          <div class="avatars">
+            <img src="assets/img/avatar-1.png" alt="" />
+            <img src="assets/img/avatar-2.png" alt="" />
+            <img src="assets/img/avatar-3.png" alt="" />
+            <img src="assets/img/avatar-4.png" alt="" />
+          </div>
+          <div>
+            <p class="hero__customers-count">12K+ Customer</p>
+            <p class="hero__customers-label">Happy our service</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="search" onsubmit="event.preventDefault(); location.hash='properties';">
+        <h2 class="search__title">Find the best place</h2>
+        <div class="search__row">
+          <div class="search__fields">
+            <label class="field">
+              <span class="field__label">Category</span>
+              <span class="field__control">
+                <select>
+                  <option value="" selected>Select Category</option>
+                  <option>House</option><option>Apartment</option><option>Villa</option><option>Residential</option>
+                </select>
+                <img src="assets/icons/chevron-down.svg" alt="" width="20" height="20" />
+              </span>
+            </label>
+            <label class="field">
+              <span class="field__label">Price</span>
+              <span class="field__control">
+                <select>
+                  <option value="" selected>Price</option>
+                  <option>Under IDR 500M</option><option>IDR 500M – 2B</option><option>IDR 2B – 5B</option><option>Above IDR 5B</option>
+                </select>
+                <img src="assets/icons/unfold.svg" alt="" width="20" height="20" />
+              </span>
+            </label>
+            <label class="field">
+              <span class="field__label">Location</span>
+              <span class="field__control">
+                <select>
+                  <option value="" selected>Location</option>
+                  <option>Seminyak, Bali</option><option>Selman, DIY</option><option>Banyumas, Central Java</option>
+                </select>
+                <img src="assets/icons/chevron-down.svg" alt="" width="20" height="20" />
+              </span>
+            </label>
+            <label class="field">
+              <span class="field__label">Style</span>
+              <span class="field__control">
+                <select>
+                  <option value="" selected>Select style</option>
+                  <option>Modern</option><option>Minimalist</option><option>Classic</option><option>Industrial</option>
+                </select>
+                <img src="assets/icons/chevron-down.svg" alt="" width="20" height="20" />
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--search">Search</button>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ OUR STORY ============ -->
+    <section class="story section" id="about">
+      <div class="container">
+        <div class="story__top">
+          <p class="eyebrow">
+            <img src="assets/icons/dot.svg" alt="" width="6" height="6" />Our Story
+          </p>
+          <div class="story__body">
+            <h2 class="story__headline">
+              We connect people with properties
+              <span class="text-pill text-pill--1"><img src="assets/img/story-1.jpg" alt="" /></span>
+              match their dreams and lifestyles—because a home is
+              <span class="text-pill text-pill--2"><img src="assets/img/story-2.jpg" alt="" /></span>
+              more than just a place, it's where life happens.
+            </h2>
+            <p class="story__copy">
+              Tukunen is a trusted real estate platform committed to making property ownership and investment easy and transparent. With years of experience and thousands of happy clients, we help you find not just a property—but a place you can truly call home.
+            </p>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div>
+              <p class="stat__num">100K+</p>
+              <p class="stat__label">Happy Clients Served</p>
+            </div>
+            <span class="stat__icon"><img src="assets/icons/like.svg" alt="" width="28" height="28" /></span>
+          </div>
+          <div class="stat">
+            <div>
+              <p class="stat__num">10K+</p>
+              <p class="stat__label">Properties Sold</p>
+            </div>
+            <span class="stat__icon"><img src="assets/icons/coin.svg" alt="" width="28" height="28" /></span>
+          </div>
+          <div class="stat">
+            <div>
+              <p class="stat__num">231</p>
+              <p class="stat__label">Available Properties</p>
+            </div>
+            <span class="stat__icon"><img src="assets/icons/task-square.svg" alt="" width="28" height="28" /></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORY ============ -->
+    <section class="category section section--grey" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><img src="assets/icons/dot.svg" alt="" width="6" height="6" />Category</p>
+          <h2 class="h2 category__title">Crafting Homes Where Memories Begin</h2>
+        </div>
+
+        <div class="category__grid">
+          <div class="category__side">
+            <div class="category__tabs" role="tablist">
+              <button class="tab is-active" role="tab" aria-selected="true" data-tab="house">
+                <img src="assets/icons/house.svg" alt="" width="28" height="28" data-active-icon />House
+              </button>
+              <button class="tab" role="tab" aria-selected="false" data-tab="apartment">
+                <img src="assets/icons/buildings.svg" alt="" width="28" height="28" />Apartment
+              </button>
+              <button class="tab" role="tab" aria-selected="false" data-tab="villa">
+                <img src="assets/icons/house-2.svg" alt="" width="28" height="28" />Villa
+              </button>
+              <button class="tab" role="tab" aria-selected="false" data-tab="residential">
+                <img src="assets/icons/buildings-2.svg" alt="" width="28" height="28" />Residential
+              </button>
+            </div>
+            <p class="category__note">We offer the best properties to suit various lifestyles.</p>
+          </div>
+
+          <div class="category__image">
+            <img src="assets/img/category-house.jpg" alt="Modern white house with a pool" />
+          </div>
+
+          <div class="category__info">
+            <div>
+              <h3 class="category__name" id="catName">House</h3>
+              <p class="category__desc" id="catDesc">A home is more than just a place to live—it’s a space to grow, share, and create memories. We offer a selection of homes designed with detail and comfort in mind, ideal for families seeking a warm, safe place to build their future. Our convenient locations, friendly neighborhoods, and modern design make each of our homes a valuable emotional and financial investment.</p>
+            </div>
+            <a href="#properties" class="btn btn--wide">View All Properties</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROPERTIES ============ -->
+    <section class="properties section" id="properties">
+      <div class="container">
+        <div class="properties__head">
+          <div class="properties__head-left">
+            <div class="section-head">
+              <p class="eyebrow"><img src="assets/icons/dot.svg" alt="" width="6" height="6" />Our Properties</p>
+              <h2 class="h2">Discover a Unique Collection of Exeptional Real Estate</h2>
+            </div>
+            <a href="#properties" class="btn btn--wide">Explore Properties</a>
+          </div>
+          <p class="properties__intro">Discover the best property options designed to suit your needs and lifestyle. From modern residences to premium residences in strategic locations — we are here to help you make your dream home a reality.</p>
+        </div>
+
+        <div class="property-grid">
+          <article class="property">
+            <div class="property__img"><img src="assets/img/property-1.jpg" alt="Modern Luxury Villa" loading="lazy" /></div>
+            <h3 class="property__name">Modern Luxury Villa</h3>
+            <p class="property__desc">Elegant residence with contemporary design, private pool and easy access to the city center.</p>
+            <p class="property__loc"><img src="assets/icons/location.svg" alt="" width="24" height="24" />Seminyak, Bali</p>
+            <p class="property__price">IDR 6,250,000,000</p>
+          </article>
+          <article class="property">
+            <div class="property__img"><img src="assets/img/property-2.jpg" alt="Cozy Family Home" loading="lazy" /></div>
+            <h3 class="property__name">Cozy Family Home</h3>
+            <p class="property__desc">Comfortable house with spacious yard and family friendly environment.</p>
+            <p class="property__loc"><img src="assets/icons/location.svg" alt="" width="24" height="24" />Selman, DIY</p>
+            <p class="property__price">IDR 3,150,000,000</p>
+          </article>
+          <article class="property">
+            <div class="property__img"><img src="assets/img/property-3.jpg" alt="Urban Townhouse" loading="lazy" /></div>
+            <h3 class="property__name">Urban Townhouse</h3>
+            <p class="property__desc">Minimalist residence in the heart of the city with complete facilities and modern design.</p>
+            <p class="property__loc"><img src="assets/icons/location-1.svg" alt="" width="24" height="24" />Seminyak, Bali</p>
+            <p class="property__price">IDR 4,500,000,000</p>
+          </article>
+          <article class="property">
+            <div class="property__img"><img src="assets/img/property-4.jpg" alt="Stylish Apartment" loading="lazy" /></div>
+            <h3 class="property__name">Stylish Apartment</h3>
+            <p class="property__desc">Industrial style apartment, suitable for young professionals with easy access to transportation.</p>
+            <p class="property__loc"><img src="assets/icons/location-1.svg" alt="" width="24" height="24" />Banyumas, Central Java</p>
+            <p class="property__price">IDR 150,000,000</p>
+          </article>
+          <article class="property">
+            <div class="property__img"><img src="assets/img/property-5.jpg" alt="Skyline Tower Condo" loading="lazy" /></div>
+            <h3 class="property__name">Skyline Tower Condo</h3>
+            <p class="property__desc">Exclusive unit in a high-rise building with stunning city views.</p>
+            <p class="property__loc"><img src="assets/icons/location-1.svg" alt="" width="24" height="24" />Seminyak, Bali</p>
+            <p class="property__price">IDR 800,000,000</p>
+          </article>
+          <article class="property">
+            <div class="property__img"><img src="assets/img/property-6.jpg" alt="Classic Heritage Home" loading="lazy" /></div>
+            <h3 class="property__name">Classic Heritage Home</h3>
+            <p class="property__desc">A warm classic home with charming touches of traditional design.</p>
+            <p class="property__loc"><img src="assets/icons/location-1.svg" alt="" width="24" height="24" />Selman, DIY</p>
+            <p class="property__price">IDR 200,000,000</p>
+          </article>
+        </div>
+
+        <div class="center">
+          <a href="#properties" class="btn btn--wide btn--semibold">View More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials section section--grey">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><img src="assets/icons/dot.svg" alt="" width="6" height="6" />Testimonial</p>
+          <h2 class="h2">Our Happy Client Say</h2>
+        </div>
+
+        <div class="t-track" id="tTrack">
+          <blockquote class="t-quote">
+            <img class="t-quote__mark" src="assets/icons/quote.svg" alt="" width="100" height="100" />
+            <p class="t-quote__text">From start to finish the process was very satisfying. The team was responsive, professional, and the property results really exceeded my expectations.</p>
+            <footer class="t-quote__author">
+              <img src="assets/img/fauzan.png" alt="" width="38" height="38" />
+              <div>
+                <p class="t-quote__name">Fauzan Ardhiansyah</p>
+                <p class="t-quote__role">Enterpreaneur</p>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="t-quote">
+            <img class="t-quote__mark" src="assets/icons/quote.svg" alt="" width="100" height="100" />
+            <p class="t-quote__text">They understood exactly what our family needed. Within a few weeks we found a home in a quiet neighborhood that felt right from the very first visit.</p>
+            <footer class="t-quote__author">
+              <img src="assets/img/avatar-1.png" alt="" width="38" height="38" />
+              <div>
+                <p class="t-quote__name">Jenny Wilson</p>
+                <p class="t-quote__role">Homeowner</p>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="t-quote">
+            <img class="t-quote__mark" src="assets/icons/quote.svg" alt="" width="100" height="100" />
+            <p class="t-quote__text">Transparent pricing, honest advice and no pressure at all. Gurkaran made my first property investment simple and stress-free.</p>
+            <footer class="t-quote__author">
+              <img src="assets/img/avatar-2.png" alt="" width="38" height="38" />
+              <div>
+                <p class="t-quote__name">Leslie Alexander</p>
+                <p class="t-quote__role">Property Investor</p>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="t-quote">
+            <img class="t-quote__mark" src="assets/icons/quote.svg" alt="" width="100" height="100" />
+            <p class="t-quote__text">Every document and viewing was handled perfectly. I always knew what was happening next, and the handover was smooth and on time.</p>
+            <footer class="t-quote__author">
+              <img src="assets/img/avatar-3.png" alt="" width="38" height="38" />
+              <div>
+                <p class="t-quote__name">Kristin Watson</p>
+                <p class="t-quote__role">First-time Buyer</p>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+
+        <div class="t-progress" aria-hidden="true"><span id="tThumb"></span></div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq section">
+      <div class="container">
+        <h2 class="h2">Any Question? We Got You</h2>
+        <div class="faq__grid">
+          <div class="faq__image"><img src="assets/img/faq.jpg" alt="Modern apartment buildings" loading="lazy" /></div>
+          <div class="faq__list" id="faqList">
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                <span>What is the difference between a real estate agent and a broker?</span>
+                <img class="faq__icon" src="assets/icons/faq-closed.svg" alt="" width="40" height="40" />
+              </button>
+              <div class="faq__a"><p>A real estate agent is licensed to help clients buy, sell or rent property, while a broker has additional training and licensing that allows them to run their own firm and supervise agents.</p></div>
+            </div>
+            <div class="faq__item is-open">
+              <button class="faq__q" aria-expanded="true">
+                <span>How do I determine the right price to buy or sell</span>
+                <img class="faq__icon" src="assets/icons/faq-open.svg" alt="" width="40" height="40" />
+              </button>
+              <div class="faq__a"><p>Pricing is based on market conditions, location, property size, condition, and recent sales of similar properties in the area. A professional appraisal or comparative market analysis can help set the right price.</p></div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                <span>What are the typical costs involved in buying?</span>
+                <img class="faq__icon" src="assets/icons/faq-closed.svg" alt="" width="40" height="40" />
+              </button>
+              <div class="faq__a"><p>Beyond the purchase price, expect taxes, notary and legal fees, bank and mortgage charges, property inspection, insurance and moving costs.</p></div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                <span>What should I look for during a home inspection?</span>
+                <img class="faq__icon" src="assets/icons/faq-closed.svg" alt="" width="40" height="40" />
+              </button>
+              <div class="faq__a"><p>Check the structure, roof, plumbing, electrical systems, signs of water damage or pests, and the condition of windows, doors and major appliances.</p></div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                <span>How long does the home buying process usually?</span>
+                <img class="faq__icon" src="assets/icons/faq-closed.svg" alt="" width="40" height="40" />
+              </button>
+              <div class="faq__a"><p>Most purchases take between one and three months from offer to handover, depending on financing, paperwork and negotiations.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ CTA + FOOTER ============ -->
+  <div class="cta-band">
+    <div class="container">
+      <div class="cta">
+        <img class="cta__bg" src="assets/img/cta.jpg" alt="" loading="lazy" />
+        <div class="cta__text">
+          <h2 class="cta__title">Ready to Find Your Dream Property?</h2>
+          <p class="cta__copy">Discover the perfect home or investment with expert guidance and personalized support every step of the way. Start your real estate journey today!</p>
+        </div>
+        <a href="#properties" class="btn btn--wide">Find Property Now</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__ping">Ping us on this email</p>
+          <a class="footer__email" href="mailto:Gurkaran@info.com">Gurkaran@info.com</a>
+        </div>
+        <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓'; this.reset();">
+          <p class="newsletter__title">Newsletter</p>
+          <div class="newsletter__row">
+            <input type="email" required placeholder="Email" aria-label="Email address" />
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer__links">
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#properties">Properties</a>
+          <a href="#services">Services</a>
+          <a href="mailto:Gurkaran@info.com">Contact</a>
+        </nav>
+        <address>
+          <p class="footer__office">Office</p>
+          <p>Padamara, Purbalingga</p>
+          <p>Jawa Tengah, Indonesia</p>
+          <p>43342</p>
+        </address>
+      </div>
+
+      <p class="footer__wordmark" aria-hidden="true">GURKARAN</p>
+    </div>
+  </footer>
+
+  <div class="bottom-bar">
+    <div class="container bottom-bar__inner">
+      <p>© Estovia. All Right Reserved</p>
+      <div class="bottom-bar__links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+      <div class="bottom-bar__social">
+        <a href="#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" alt="" width="24" height="24" /></a>
+        <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" width="24" height="24" /></a>
+        <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" width="24" height="24" /></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
